@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "308752",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1718618",
+      "name": "steam",
+      "font_class": "steam",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "1826133",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "3498425",
+      "name": "搜索--1",
+      "font_class": "sousuo",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "5726586",
+      "name": "苹果",
+      "font_class": "pingguo",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "6945108",
+      "name": "左右箭头",
+      "font_class": "icon-array_left",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "7151712",
+      "name": "windows [#174]",
+      "font_class": "windows",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "7746484",
+      "name": "Facebook",
+      "font_class": "Facebook",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "12713809",
+      "name": "左右箭头",
+      "font_class": "right",
+      "unicode": "e524",
+      "unicode_decimal": 58660
+    },
+    {
+      "icon_id": "12947466",
+      "name": "steam",
+      "font_class": "steam1",
+      "unicode": "e7b8",
+      "unicode_decimal": 59320
+    },
+    {
+      "icon_id": "14168552",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    }
+  ]
+}

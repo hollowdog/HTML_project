@@ -1,0 +1,320 @@
+@import "reset";
+@import "mixin";
+input{
+  color: white;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
+}
+html,body{
+  height: 1300px;
+  width: 100%;
+}
+body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+// 头部
+.container{
+  width: 940px;
+  height:100%;
+  background: black;
+}
+
+.header{
+  width: 940px;
+  height: 104px;
+  background: black;
+  color: grey;
+  position: relative;
+  >a{
+    width: 176px;
+    height: 44px;
+    position: absolute;
+    top:30px;
+    left:5px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #nav1{
+    height: 68px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+
+    li{
+      height: 68px;
+      width: 42px;
+      padding: 45px 7px 7px 7px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 68px;
+      .jump1{
+        display:none;
+        // height: 200px;
+        width: 100px;
+        >a{
+          height: 30px;
+          width: 80px;
+          font-size: 12px;
+          margin: 0;
+          padding:0;
+          line-height: 30px;
+          padding-left: 10px;
+          text-align: left;
+          color:white;
+        }
+      }
+      &:hover{
+        color: white;
+        .jump1{
+          display:flex;
+          flex-flow: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          background: black;
+          position: absolute; 
+          z-index: 10;
+        }
+      } 
+    }
+  }
+  .l_l{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+    position:absolute;
+    top:0;
+    right: 0;
+    li{
+      height: 30px;
+      font-size: 14px;
+      float: left;
+      display: flex;
+      padding-left: 5px;
+      position: relative;
+      a{
+        width: 35px;
+        height: 14px;
+        border-right:1px white solid;
+        padding-right: 5px;
+        color: grey;
+      }
+      #langue{
+        display: none;
+        width: 120px;
+        position:absolute;
+        right: 0;
+        top:30px;
+        background: black;
+        color: white;
+        // border:1px solid grey;
+        li{
+          height: 30px;
+          font-size: 14px;
+          width: 120px;
+          line-height: 30px;
+          text-align: left;
+          padding-left: 10px;
+        }
+
+      }
+      &:hover #langue{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+      }    
+    }
+  }
+}
+// 主体
+#content{ 
+  width: 100%;
+  height: 1064px;
+  display: flex;
+
+  #register{
+    width: 616px;
+    height: 1064px;
+    padding: 0 16px;
+    background: black;
+    color: white;
+    #register_form{
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    h2{
+      font-size: 30px;
+      width: 100%;
+      height: 44px;
+      margin-bottom: 16px;
+      line-height: 44px;
+    }
+    label{
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    input{
+      width: 300px;
+      height: 34px;
+      padding: 8px 6px;
+      border: none;
+      border-radius: 5px;
+      background:#32353C;
+      margin: 3px;
+    }
+    #form_note{
+      font-size: 12px;
+    }
+    #instructions{
+      margin: 20px 0;
+    }
+    #warning{
+      height: 500px;
+      width: 100%;
+      background: black;
+      
+    }
+    #agree{
+      height: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      input{
+        height: 20px;
+        width: 20px;
+      }
+      >label{
+        height: 20px;
+        font-size: 12px;
+        padding: 0 20px;
+      }
+    }
+    #submit1{
+      width: 50px;
+      align-self: flex-end;
+      margin:20px 20px;
+      background: green;
+      // display: none;
+    }
+  }
+  #about_us{
+    width: 320px;
+    height: 1064px;
+    background:black;
+    font-size: 12px;
+    color: #969E93;
+    h2{
+      font-size: 14px;
+      margin: 20px 0;
+    }
+    ul li{
+      margin-bottom: 10px;
+    }
+    img{
+      margin-bottom: 50px;
+    }
+    span{
+      display: block;
+      margin-bottom: 20px;
+      padding-left: 5px;
+    }
+    a{
+      color: #969E93;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+// footer
+#footer{
+  height: 150px;
+  width: 100%;
+  padding:20px 0 60px;
+  background: black;
+  hr{
+    margin-bottom: 8px;
+    color: #969E93;
+  }
+  ul{
+    height: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li{
+      height: 22px;
+      background: #383B41;
+      margin: 0 5px;
+      border-radius: 4px;
+      overflow: hidden;
+      a{
+        font-size: 12px;
+        height: 100%;
+        padding: 0 15px;
+        line-height: 100%;
+        text-align: center;
+        color: #969E93;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+  #div1{
+    height: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img{
+      height: 26px;
+      width: 90px;
+    }
+    div{
+      font-size: 12px;
+      width: 600px;
+      margin: 0 200px 0 20px;
+      color: white;
+      a{
+        font-size: 12px;
+        color: white;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+  #div2{
+    width: 60%;
+    height: 22px;
+    display: flex;
+    justify-content: space-around;
+    color: #969E93;
+    a{
+      font-size: 12px;
+      color: #969E93;
+      line-height: 22px;
+      text-align: center;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}

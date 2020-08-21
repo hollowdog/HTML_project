@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var arr = [
+      // 第一个
+      {
+        id:1,
+        title:"Spiritfarer Demo",
+        main_default:"现已推出",
+        price_off:"",
+        price:"免费试用版",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/1202910/capsule_616x353.jpg?t=1592349168&",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/1202910/ss_addb37eff78b0f7444b0874f715efcef68db1c21.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/1202910/ss_c43edb3bca598fd6afafb17314dfdbc511cfca82.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/1202910/ss_1ff5f09a697899c83f92cb0142653108f9377b74.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/1202910/ss_cb5c5af0cdef3ec3a5317c162c32e956ec7aa76b.600x338.jpg"
+      },
+      // 2
+      {
+        id:2,
+        title:"Fall Guys: Collectors Pack",
+        main_default:"现已推出",
+        price_off:"",
+        price:"￥32",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/1343612/ss_56db6667224e150923bb20e7af2e06472217cb1b.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/1343612/ss_56db6667224e150923bb20e7af2e06472217cb1b.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/1343612/ss_56db6667224e150923bb20e7af2e06472217cb1b.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/1343612/ss_56db6667224e150923bb20e7af2e06472217cb1b.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/1343612/ss_56db6667224e150923bb20e7af2e06472217cb1b.600x338.jpg"
+      },
+      // 3
+      {
+        id:3,
+        title:"Dying Light Enhanced Edition",
+        main_default:"现已推出",
+        price_off:"-70%",
+        price:"￥57",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/subs/88801/capsule_616x353_schinese.jpg?t=1594317749&",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/239140/ss_ac414827362042b5f4a95ab90df508adc822ddc1.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/335810/ss_e15c13e0151e549c3dd44b8d09be0cdbf336e936.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/325724/ss_e15c13e0151e549c3dd44b8d09be0cdbf336e936.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/435111/ss_ba3fb35d4e217c498ea67beb01d8c708e41ffece.600x338.jpg"
+      },
+      // 4
+      {
+        id:4,
+        title:"Wallpaper Engine：壁纸引擎",
+        main_default:"热销商品",
+        price_off:"",
+        price:"￥19",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_b2adfd21222f3eb0d9ded4b9f8fc76d30385d39e.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_39ed0a9730b67a930acb8ceed221cc968bee7731.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_c63a5b855bf66be02b7d1c167987f7cf2a38870a.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_8b488722123196b36cd134dac6643fbd4b8fada7.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_b2adfd21222f3eb0d9ded4b9f8fc76d30385d39e.600x338.jpg"
+      },
+      // 5
+      {
+        id:5,
+        title:"枪火重生",
+        main_default:"现在已经推出抢先体验版",
+        price_off:"-10%",
+        price:"￥38",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/1217060/ss_60ff60b040de062c39033897e0785edbfc56e89e.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/1217060/ss_f2018a6b4525a0142e4a50776f7f06186881c185.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/1217060/ss_19e306c5893d537cfee09054e32a28dfd17fc59b.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/1217060/ss_974598517298e98f3b8a88825bca703247dd9737.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/1217060/ss_60ff60b040de062c39033897e0785edbfc56e89e.600x338.jpg"
+      },
+      // 6
+      {
+        id:6,
+        title:"PLAYERUNKNOWN'S BATTLEGROUNDS",
+        main_default:"现已推出",
+        price_off:"",
+        price:"￥98",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/578080/ss_11e51d12d854712ed7c83e69f1b21d246ab018b3.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/578080/ss_abadb3bfc951cd05150901ff65386e3129c6011a.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/578080/ss_c49417566f70eec8bf0ddbb2956b235d91504a09.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/578080/ss_de28db240ee8646b1dd883a141b4832271a150e7.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/578080/ss_11e51d12d854712ed7c83e69f1b21d246ab018b3.600x338.jpg"
+      },
+      // 7
+      {
+        id:7,
+        title:"Risk of Rain 2",
+        main_default:" 最新更新",
+        price_off:"",
+        price:"￥80",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_2bb49071317f7b241a527cf6e7aabd2cb6af055b.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_85548e86c50ff654c6a49235ea686a956f8ee9ec.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg"
+      },
+      // 8
+      {
+        id:8,
+        title:"Grand Theft Auto V",
+        main_default:"现已推出",
+        price_off:"-50%",
+        price:"￥59",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_1487c2c7ddd9a1ae6b55f7e50d5d63ada6915921.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_62a2f95c1784f138c3abbecf376c5cc99cc94a57.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_e929649b2b98ad76795d92d8489470bc5dbffddb.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_a5ca40b51e95d5c592e5eb77b3d78d5149ea5fd6.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_1487c2c7ddd9a1ae6b55f7e50d5d63ada6915921.600x338.jpg"
+      },
+      //9
+      {
+        id:9,
+        title:" Total War: THREE KINGDOMS - The Furious Wild",
+        main_default:"立即预购",
+        price_off:"-10%",
+        price:"￥yen; 76",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_b28348e350c1a58feaba17e39de3dd2b2621ca56.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_2d59e5427f824ea807c25b924581d9217899e10a.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_73d19e083f096701f1e8ed651a00464f9839253e.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_9d9d4b968139e4dddf56274c0e1a26a1e083294e.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_b28348e350c1a58feaba17e39de3dd2b2621ca56.600x338.jpg"
+      },
+         // 10
+         {
+        id:10,
+        title:"Risk of Rain 2",
+        main_default:" 最新更新",
+        price_off:"",
+        price:"￥80",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_2bb49071317f7b241a527cf6e7aabd2cb6af055b.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_85548e86c50ff654c6a49235ea686a956f8ee9ec.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/632360/ss_965f5c4a66d639861bf269abe5ba1a9edacb0cf7.600x338.jpg"
+      },
+      //11
+      {
+        id:11,
+        title:"Grand Theft Auto V",
+        main_default:"现已推出",
+        price_off:"-50%",
+        price:"￥59",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_1487c2c7ddd9a1ae6b55f7e50d5d63ada6915921.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_62a2f95c1784f138c3abbecf376c5cc99cc94a57.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_e929649b2b98ad76795d92d8489470bc5dbffddb.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_a5ca40b51e95d5c592e5eb77b3d78d5149ea5fd6.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/271590/ss_1487c2c7ddd9a1ae6b55f7e50d5d63ada6915921.600x338.jpg"
+      },
+      //12
+      {
+        id:12,
+        title:" Total War: THREE KINGDOMS - The Furious Wild",
+        main_default:"立即预购",
+        price_off:"-10%",
+        price:"￥yen; 76",
+        icon_show1:1,
+        icon_show2:1,
+        icon_show3:1,
+        img:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_b28348e350c1a58feaba17e39de3dd2b2621ca56.600x338.jpg",
+        img1:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_2d59e5427f824ea807c25b924581d9217899e10a.600x338.jpg",
+        img2:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_73d19e083f096701f1e8ed651a00464f9839253e.600x338.jpg",
+        img3:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_9d9d4b968139e4dddf56274c0e1a26a1e083294e.600x338.jpg",
+        img4:"https://media.st.dl.pinyuncloud.com/steam/apps/1299591/ss_b28348e350c1a58feaba17e39de3dd2b2621ca56.600x338.jpg"
+      },
+     
+    ]
+
+    var str = JSON.stringify(arr)
+
+    console.log(str)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
