@@ -144,10 +144,12 @@ body{
 .content{
   height: 66px;
   width: 100%;
-
+  position: relative;
   // 购物车
   #goodsBasket{
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 50px;
     padding: 0 25px;
     background: yellowgreen;
@@ -163,7 +165,8 @@ body{
     background: #377096;
     margin-top: 35px;
     // overflow: hidden;
-    position: relative;
+    position: absolute;
+    // top: 35px;
     #nav2{
       height: 35px;
       width: 436px;
@@ -268,7 +271,8 @@ body{
     font-size: 14px;
     color: #fff;
     float: left;
-    margin: 25px 0 10px;
+    margin: 120px 0 10px;
+    
   }
   // 轮播图1
   // 轮播图内部样式
@@ -276,8 +280,9 @@ body{
     height: 472px;
     width: 940px;
     position: relative;
-    top:55px;
+    top:150px;
     color: white;
+    // margin-top: 100px;
     // 主体
     #bannerBody1{
         width: 940px;

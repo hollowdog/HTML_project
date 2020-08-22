@@ -143,22 +143,24 @@ body{
   width: 100%;
   position: relative;
   // 购物车
-  #goodsBasket{
-    float: right;
-    width: 50px;
-    padding: 0 25px;
-    background: yellowgreen;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-    margin: 7px 0px 4px ;
-  }
+  // #goodsBasket{
+    
+  //   width: 50px;
+  //   padding: 0 25px;
+  //   background: yellowgreen;
+  //   font-size: 12px;
+  //   text-align: center;
+  //   line-height: 20px;
+  //   margin: 7px 0px 4px ;
+  //   position:absolute;
+  //   right: 0;
+  // }
   // 导航和搜索框
   #nav_search{
     height: 35px;
     width: 100%;
     background: #377096;
-    margin-top: 35px;
+    // margin-top: 35px;
     // overflow: hidden;
     position: relative;
     #nav2{
