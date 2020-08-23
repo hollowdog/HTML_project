@@ -288,28 +288,35 @@ body{
         width: 940px;
         height: 352px;
         position: absolute;
+        overflow: hidden;
         top: 0;
         // overflow: hidden;
+      #bannerBox1{
+        position: absolute;
+        top: 0;
+        opacity: 1;
         .bBox{
           width:100%;
-          height: 100%;
+          height: 360px;
           // overflow: hidden;
           display: flex;
+          
           h3{
             font-size: 24px;
             line-height: 26px;
             overflow: hidden;
-            max-height: 66px;
+            height: 66px;
             width: 302px;
-            padding:4px 0;
-            margin: 3px 0 0 10px;
+            padding:5px 0;
+            margin: 0 0 0 10px;
+
           }
           h4{
             font-size: 22px;
             line-height: 22px;
             height: 24px;
             width: 100%;
-            padding-left: 10px;
+            padding:20PX;
           }
           h5{
             width: 100%;
@@ -321,7 +328,7 @@ body{
               display: inline-block;
               height: 20px;
               line-height: 20px;
-              padding:0 3px;
+              padding:5PX 3px;
             }
             span:nth-child(1){
               color: white;
@@ -356,19 +363,22 @@ body{
           }
           >div{
             background: black;
-            height: 100%;
+            height: 94%;
             display: flex;
             flex-flow: column;
             justify-content: space-between;
             align-items: flex-start;
             >div{
               width: 100%;
+              height: 160px;
               display: flex;
               flex-flow: wrap;
               >a{
                 width: 49%;
+                height: 79px;
                 >img{
                   width: 100%;
+                  height: 100%;
                   opacity: 0.6;
                 }
                 // 此处的图片还需要一个mouseenter事件，使得大图变成对应的图片
@@ -379,9 +389,8 @@ body{
             }
           }
         }
-        .show{
-          display: flex;
-        }
+      }
+
         
     }
     // 标点
@@ -406,6 +415,9 @@ body{
           border-radius: 4px;
           background: white;
           opacity: 0.5;
+        }
+        .active{
+          background: orange;
         }
 
       }

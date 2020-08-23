@@ -6,7 +6,7 @@
   <title>欢迎来到Steam!</title>
   <link rel="stylesheet" href="./iconfont/iconfont.css">
   <link rel="stylesheet" href="./css/goodsDetail.css">
-  <script src="./js/require.js" defer async ="true" data-main="js/main"></script>
+  <script src="./js/require.js" defer async ="true" data-main="js/main_goodsDetail"></script>
 </head>
 <body>
   <!-- 左菜单 -->
@@ -120,164 +120,66 @@
         </div>
       </div>
       
-      <!-- 广告图 -->
-      <img src="https://media.st.dl.pinyuncloud.com/steam/clusters/about_i18n_assets/about_i18n_assets_0/new_features_banner_schinese.png?t=1581114727" id="guanggao" >
-      <img src="https://media.st.dl.pinyuncloud.com/store/labs/banner/labs_search_banner_hover.png" id="hover" >
-      <!-- 商品列表 -->
-      <h2 id="goodslist_title">商品列表</h2>
-      <div id="goodslist">
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
+      <!-- 商品详情页，带有放大功能，
+      1.图片和图片放大区域
+      2.商品描述
+      3.商品价格和点击购买/装到购物车页面
+      -->
+      <div id="goodsBox">
+        <div id="goodsImg">
+          <div id="small">
+            <img src="https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_4de8564700e99ba7ecac2794127cc85ceba63778.600x338.jpg?t=1594917985" alt="">
+            <div></div>
           </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
+          <div id="big">
+            <img src="https://media.st.dl.pinyuncloud.com/steam/apps/431960/ss_4de8564700e99ba7ecac2794127cc85ceba63778.600x338.jpg?t=1594917985" alt="">
           </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
+        </div>
+        <div id="decription">
+          <p>您可以在桌面上使用惊艳的动态壁纸。可以将您自己的图片制成动画以创建新壁纸，或导入视频/网站并在 Steam Workshop...</p>
+        </div>
+        <div id="buyit">
+          <span>购买wallpaper:engine</span>
+          <div id="buy_btn">
+            <span>￥18</span>
+            <a href="">加入购物车</a>
           </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
-        <a href="" id="goodsli">
-          <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-          <div>
-            <article>From the deep dark</article>
-            <span class="iconfont">&#xe68d;</span>
-            <span class="iconfont">&#xe7b8;</span>
-            <span class="iconfont">&#xe656;</span>
-          </div>
-          <div>2020年8月21日</div>
-          <div>10%off</div>
-          <div>￥45</div>
-        </a>
+        </div>
       </div>
+
+
+
       <!-- 页脚 -->
       <div id="footer">
-      <hr>
-      <ul>
-        <li><a href="">关于steam</a></li>
-        <li><a href="">关于valve</a></li>
-        <li><a href="">帮助</a></li>
-        <li><a href="">动态信息</a></li>
-      </ul>
-      <hr>
-      <div id="div1">
-        <img src="./images/valve.png" alt="">
-        <div>
-          ©2020 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。所有的价格均已包含增值（如适用）。   
-          <a href="">隐私政策</a>&nbsp;|&nbsp;
-          <a href="">法律信息</a>&nbsp;|&nbsp;
-          <a href="">steam订户信息</a>&nbsp;|&nbsp;
-          <a href="">退款</a>
+        <hr>
+        <ul>
+          <li><a href="">关于steam</a></li>
+          <li><a href="">关于valve</a></li>
+          <li><a href="">帮助</a></li>
+          <li><a href="">动态信息</a></li>
+        </ul>
+        <hr>
+        <div id="div1">
+          <img src="./images/valve.png" alt="">
+          <div>
+            ©2020 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。所有的价格均已包含增值（如适用）。   
+            <a href="">隐私政策</a>&nbsp;|&nbsp;
+            <a href="">法律信息</a>&nbsp;|&nbsp;
+            <a href="">steam订户信息</a>&nbsp;|&nbsp;
+            <a href="">退款</a>
+          </div>
+          <img src="./images/steamLogo.png" alt="">
         </div>
-        <img src="./images/steamLogo.png" alt="">
-      </div>
-      <hr>
-      <div id="div2">
-        <a href="">关于valve</a>|
-        <a href="">Steamworks</a>|
-        <a href="">工作</a>|
-        <a href="">Steam 分销</a>|
-        <a href="">礼物卡</a>|
-        <a href="" class="iconfont">&#xe63e;&nbsp;Steam</a>|
-        <a href="" class="iconfont">&#xe7b8;&nbsp;@steam</a>
-      </div>
+        <hr>
+        <div id="div2">
+          <a href="">关于valve</a>|
+          <a href="">Steamworks</a>|
+          <a href="">工作</a>|
+          <a href="">Steam 分销</a>|
+          <a href="">礼物卡</a>|
+          <a href="" class="iconfont">&#xe63e;&nbsp;Steam</a>|
+          <a href="" class="iconfont">&#xe7b8;&nbsp;@steam</a>
+        </div>
       </div>
       
   

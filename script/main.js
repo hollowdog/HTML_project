@@ -22,7 +22,7 @@ require.config({
 
 require(["index","banner"],function(index,banner){
   // 获取数据
-  index.download()
+  // index.download()
   // 轮播图
   banner.bannerMain()
   // 购物车效果
