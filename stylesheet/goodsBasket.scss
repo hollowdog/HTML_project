@@ -143,7 +143,7 @@ body{
 
 // 主体
 .content{
-  height: 100%px;
+  height: 1100px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -267,29 +267,133 @@ body{
     }
   }
 
-  #guanggao{
-    position: absolute;
-    top:100px;
-    &:hover,#hover{
-      display: block;
+
+  // goodsBasket
+  #Basket{
+    background:#17435f;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 100px;
+    #div1{
+      padding: 10px;
+      a{
+        font-size: 14px;
+        color: grey;
+        &:hover{
+          color: white;
+        }
+      }
+      span{
+        font-size: 12px;
+        color: grey;
+      }
+    }
+    h2{
+      font-size: 45px;
+      padding: 5px;
+      color: white;
+    }
+    #theBasket{
+      background: #1b2838;
+      width: 940px;
+      height: 50%;
+      position: relative;
+      top: 20px;
+      padding: 20px 0;
+      ul{
+        width: 908px;
+        height: 275px;
+        overflow-x: hidden;
+        background: #1b2838;
+        padding: 0px 16px;
+        li{
+          height: 45px;
+          padding: 5px;
+          margin: 1px 0;
+          width: 100%;
+          background: #16202d;
+          display: flex;
+          justify-content: space-between;
+          color: white;
+          img{
+            height: 100%;
+          }
+          h5{
+            width: 50%;
+            font-size: 12px;
+            padding: 15px;
+            line-height: 22px;
+            text-align: left;
+          }
+          div:nth-child(3){
+            height: 100%;
+            width: 90px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+          div:nth-child(4){
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            a{
+              color:yellowgreen;
+              &:hover{
+                color: green;
+              }
+            }
+          }
+        }
+      }
+    }
+    #total{
+      background: #16202d;
+      width: 30%;
+      height: 30px;
+      font-size: 14px;
+      position: relative;
+      left: 66%;
+      top: - 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      span{
+        line-height: 30px;
+        background: #16202d;
+        color: white;
+      }  
+    }
+    #pay{
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      padding: 0 15px;
+      height: 30px;
+      font-size: 15px;
+      position: relative;
+      top: -90px;
+      left: 820px;
+      background: green;
+      opacity: 0.6;
+      border-radius: 5px;
+      color: white;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
-  #hover{
-    position: absolute;
-    top: 122px;
-    display: block;
-
-  }
-
   
   // footer
   #footer{
     height: 150px;
     width: 100%;
     padding:20px 0 60px;
+    position: relative;
+    top: 0px;
     background: #1B2838;
-    // position: absolute;
-    margin: 800px 0 0 0;
     hr{
       margin-bottom: 8px;
       color: #969E93;

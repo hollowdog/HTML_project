@@ -13,11 +13,25 @@ html,body{
 body{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background: #19435F;
 }
 
-// 头部
+
+// 左菜单
+#left_menu{
+  width: 200px;
+  height: 1000px;
+  background: red;
+}
+// 右占位
+
+#right_menu{
+  width: 200px;
+  height: 1000px;
+  background: red;
+}
+// 主体
 .container{
   width: 940px;
   height: 4300px;
