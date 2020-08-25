@@ -23,6 +23,11 @@ require.config({
 require(["index","banner"],function(index,banner){
   // 获取数据
   // index.picHover()
+  index.download1()
+  index.download2()
+  index.download3()
+  index.game_list_hover()
+  index.game_list_button()
   // 轮播图
   banner.bannerMain()
   banner.bannerMain2()
