@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var str = `<div class="home_page_content">
+  <div class="home_leftcol home_tab_col">
+    <div class="home_tabs_row_ctn">
+      <div class="store_horizontal_minislider_ctn" style="height: 31px;">
+        <div class="home_tabs_row store_horizontal_minislider">
+          <div id="tab_newreleases_content_trigger" onclick="HomeTabSelect( this, 'tab_newreleases_content' );" class="home_tab active" data-usability="5">
+            <div class="tab_content">新品与热门商品</div></div>
+          <div id="tab_topsellers_content_trigger" onclick="LoadDelayedImages('home_tabs'); HomeTabSelect( this, 'tab_topsellers_content' );" class="home_tab" data-usability="6">
+            <div class="tab_content">热销商品</div></div>
+          <div id="tab_upcoming_content_trigger" onclick="LoadDelayedImages('home_tabs'); HomeTabSelect( this, 'tab_upcoming_content' );" class="home_tab" data-usability="7">
+            <div class="tab_content">热门即将推出</div></div>
+          <div id="tab_specials_content_trigger" onclick="LoadDelayedImages('home_tabs'); HomeTabSelect( this, 'tab_specials_content' );" class="home_tab" data-usability="8">
+            <div class="tab_content">优惠</div></div>
+        </div>
+        <div class="slider_left" style="display: none;">
+          <span></span>
+        </div>
+        <div class="slider_right" style="display: none;">
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <input id="last_tab" type="hidden" value="">
+    <div class="home_tabs_content">
+      <div class="tab_content" id="tab_newreleases_content">
+        <a href="https://store.steampowered.com/app/1384260/Heart_GirlStarlight/?snr=1_4_4__145_1" class="tab_item app_impression_tracked" data-ds-appid="1384260" data-ds-itemkey="App_1384260" data-ds-tagids="[597,1664,6650,12095,4136,4085,1738]" data-ds-descids="[1,5]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/capsule_184x69.jpg?t=1598272013" id="delayedimage_home_tabs_autoload_0"></div>
+          <div class="discount_block tab_item_discount" data-price-final="600">
+            <div class="discount_pct">-33%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 9</div>
+              <div class="discount_final_price">¥ 6</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Heart Girl:Starlight</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">休闲</span>
+                <span class="top_tag">, 解谜</span>
+                <span class="top_tag">, 裸露</span>
+                <span class="top_tag">, 色情内容</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1328910/_/?snr=1_4_4__145_2" class="tab_item app_impression_tracked" data-ds-appid="1328910" data-ds-itemkey="App_1328910" data-ds-tagids="[122,492,4434,4085,4182,12095,7208]" data-ds-descids="[5]" data-ds-crtrids="[32398519]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1328910/capsule_184x69_schinese.jpg?t=1598068836" id="delayedimage_home_tabs_autoload_1"></div>
+          <div class="discount_block tab_item_discount" data-price-final="4400">
+            <div class="discount_pct">-10%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 49</div>
+              <div class="discount_final_price">¥ 44</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">少女退魔记</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">角色扮演</span>
+                <span class="top_tag">, 独立</span>
+                <span class="top_tag">, 日系角色扮演</span>
+                <span class="top_tag">, 动漫</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/938560/INMOST/?snr=1_4_4__145_3" class="tab_item app_impression_tracked" data-ds-appid="938560" data-ds-itemkey="App_938560" data-ds-tagids="[492,21,3964,5537,4166,3834,1742]" data-ds-crtrids="[6859149]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/938560/capsule_184x69.jpg?t=1598003908" id="delayedimage_home_tabs_autoload_2"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="5000">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 50</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">INMOST</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">独立</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 像素图形</span>
+                <span class="top_tag">, 平台解谜</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1016120/PGA_TOUR_2K21/?snr=1_4_4__145_4" class="tab_item app_impression_tracked" data-ds-appid="1016120" data-ds-itemkey="App_1016120" data-ds-tagids="[701,599,7038,7368,1677]" data-ds-crtrids="[2428135]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1016120/capsule_184x69.jpg?t=1597982399" id="delayedimage_home_tabs_autoload_3"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="19900">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 199</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">PGA TOUR 2K21</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">体育</span>
+                <span class="top_tag">, 模拟</span>
+                <span class="top_tag">, 高尔夫球</span>
+                <span class="top_tag">, 本地多人</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1282590/Train_Sim_World_2/?snr=1_4_4__145_5" class="tab_item app_impression_tracked focus" data-ds-appid="1282590" data-ds-itemkey="App_1282590" data-ds-tagids="[599,1616,4175,1644,4182,1654,9204]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/capsule_184x69.jpg?t=1597945878" id="delayedimage_home_tabs_autoload_5"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="9000">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 90</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Train Sim World® 2</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">模拟</span>
+                <span class="top_tag">, 火车</span>
+                <span class="top_tag">, 拟真</span>
+                <span class="top_tag">, 驾驶</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1013310/_/?snr=1_4_4__145_6" class="tab_item app_impression_tracked" data-ds-appid="1013310" data-ds-itemkey="App_1013310" data-ds-tagids="[492,21,9,4667,4182,6625,1664]" data-ds-descids="[2,5]" data-ds-crtrids="[33019968]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/capsule_184x69_schinese.jpg?t=1597938582" id="delayedimage_home_tabs_autoload_6"></div>
+          <div class="discount_block tab_item_discount" data-price-final="6400">
+            <div class="discount_pct">-20%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 80</div>
+              <div class="discount_final_price">¥ 64</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">浴血黑帮：傀儡师</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">独立</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 策略</span>
+                <span class="top_tag">, 暴力</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1344680/Remnant_From_the_Ashes__Subject_2923/?snr=1_4_4__145_7" class="tab_item app_impression_tracked" data-ds-appid="1344680" data-ds-itemkey="App_1344680" data-ds-tagids="[122,19,21,4667,29482]" data-ds-descids="[2,5]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1344680/capsule_184x69.jpg?t=1597957986" id="delayedimage_home_tabs_autoload_7"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="4800">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 48</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Remnant: From the Ashes - Subject 2923</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">角色扮演</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 暴力</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1368860/_/?snr=1_4_4__145_8" class="tab_item app_impression_tracked" data-ds-appid="1368860" data-ds-itemkey="App_1368860" data-ds-tagids="[492,597,122,21,599,113,4136]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1368860/capsule_184x69.jpg?t=1598292011" id="delayedimage_home_tabs_autoload_8"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="0">
+            <div class="discount_prices">
+              <div class="discount_final_price">免费</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">像素女友</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">独立</span>
+                <span class="top_tag">, 休闲</span>
+                <span class="top_tag">, 角色扮演</span>
+                <span class="top_tag">, 冒险</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1362420/Siege_Survival_Gloria_Victis_Prologue/?snr=1_4_4__145_9" class="tab_item app_impression_tracked" data-ds-appid="1362420" data-ds-itemkey="App_1362420" data-ds-tagids="[8945,9,113,16689,599,6426,4182]" data-ds-crtrids="[37395807]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/capsule_184x69.jpg?t=1598116353" id="delayedimage_home_tabs_autoload_10"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="0">
+            <div class="discount_prices">
+              <div class="discount_final_price">免费开玩</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Siege Survival: Gloria Victis Prologue</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">资源管理</span>
+                <span class="top_tag">, 策略</span>
+                <span class="top_tag">, 免费</span>
+                <span class="top_tag">, 时间管理</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/972660/Spiritfarer/?snr=1_4_4__145_10" class="tab_item app_impression_tracked" data-ds-appid="972660" data-ds-itemkey="App_972660" data-ds-tagids="[12472,21,1643,492,6815,1625,1742]" data-ds-crtrids="[32943393]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://media.st.dl.pinyuncloud.com/steam/apps/972660/capsule_184x69_alt_assets_1.jpg?t=1598282921" id="delayedimage_home_tabs_autoload_11"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="9000">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 90</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Spiritfarer®</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <span class="platform_img linux"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">管理</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 建造</span>
+                <span class="top_tag">, 独立</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <div class="tab_see_more">查看更多：
+          <a href="https://store.steampowered.com/explore/new/?snr=1_4_4__tabsmore" class="btnv6_white_transparent btn_small_tall">
+            <span>新品</span></a>
+        </div>
+      </div>
+      <div class="tab_content" id="tab_topsellers_content" style="display: none;">
+        <a href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/?snr=1_4_4__104" class="tab_item" data-ds-appid="1097150" data-ds-itemkey="App_1097150" data-ds-tagids="[3859,4136,176981,3843,1719,3968,5350]" data-ds-crtrids="[38424069,6638525]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_0"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="5800">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 58</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Fall Guys: Ultimate Knockout</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">多人</span>
+                <span class="top_tag">, 欢乐</span>
+                <span class="top_tag">, 大逃杀</span>
+                <span class="top_tag">, 在线合作</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/sub/124923/?snr=1_4_4__104" class="tab_item" data-ds-packageid="124923" data-ds-appid="292030,378649,378648" data-ds-itemkey="Sub_124923" data-ds-tagids="[122,1695,1742,4166,1684,5611,21]" data-ds-descids="[1,5]" data-ds-crtrids="[32989758]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_1"></div>
+          <div class="discount_block tab_item_discount" data-price-final="4700">
+            <div class="discount_pct">-70%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 158</div>
+              <div class="discount_final_price">¥ 47</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">The Witcher 3: Wild Hunt - Game of the Year Edition</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">角色扮演</span>
+                <span class="top_tag">, 开放世界</span>
+                <span class="top_tag">, 剧情丰富</span>
+                <span class="top_tag">, 氛围</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1216710/_/?snr=1_4_4__104" class="tab_item" data-ds-appid="1216710" data-ds-itemkey="App_1216710" data-ds-tagids="[599,492,122,5502,4182,9204,1664]" data-ds-crtrids="[38310475]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_2"></div>
+          <div class="discount_block tab_item_discount" data-price-final="3700">
+            <div class="discount_pct">-36%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 58</div>
+              <div class="discount_final_price">¥ 37</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">全网公敌</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">模拟</span>
+                <span class="top_tag">, 独立</span>
+                <span class="top_tag">, 角色扮演</span>
+                <span class="top_tag">, 黑客</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/bundle/15610/Fall_Guys_Collectors_Edition/?snr=1_4_4__104" class="tab_item" data-ds-bundleid="15610" data-ds-bundle-data="{&quot;m_nDiscountPct&quot;:&quot;0&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:469804,&quot;m_rgIncludedAppIDs&quot;:[1343612],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:3200,&quot;m_nFinalPriceInCents&quot;:3200,&quot;m_nFinalPriceWithBundleDiscount&quot;:3200},{&quot;m_nPackageID&quot;:369927,&quot;m_rgIncludedAppIDs&quot;:[1097150],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:5800,&quot;m_nFinalPriceInCents&quot;:5800,&quot;m_nFinalPriceWithBundleDiscount&quot;:5800}],&quot;m_bIsCommercial&quot;:false,&quot;m_bRestrictGifting&quot;:true}" data-ds-itemkey="Bundle_15610" data-ds-tagids="[128,597,3859,4136,19,176981,701]" data-ds-crtrids="[38424069,6638525]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_3"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="9000">
+            <div class="discount_prices">
+              <div class="discount_final_price your_price">
+                <div class="your_price_label">您的价格：</div>
+                <div>¥ 90</div></div>
+            </div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Fall Guys Collector's Edition</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">大型多人在线</span>
+                <span class="top_tag">, 休闲</span>
+                <span class="top_tag">, 多人</span>
+                <span class="top_tag">, 欢乐</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1217060/_/?snr=1_4_4__104" class="tab_item" data-ds-appid="1217060" data-ds-itemkey="App_1217060" data-ds-tagids="[1663,1685,3959,492,3859,3843,1716]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_4"></div>
+          <div class="discount_block tab_item_discount" data-price-final="3800">
+            <div class="discount_pct">-10%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 42</div>
+              <div class="discount_final_price">¥ 38</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">枪火重生</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">第一人称射击</span>
+                <span class="top_tag">, 合作</span>
+                <span class="top_tag">, 轻度 Rogue</span>
+                <span class="top_tag">, 独立</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1237970/Titanfall_2/?snr=1_4_4__104" class="tab_item" data-ds-appid="1237970" data-ds-itemkey="App_1237970" data-ds-tagids="[1663,3859,19,1774,4182,4821,3942]" data-ds-descids="[2,5]" data-ds-crtrids="[37913704,36135791]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_5"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="18800">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 188</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Titanfall® 2</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">第一人称射击</span>
+                <span class="top_tag">, 多人</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 射击</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/?snr=1_4_4__104" class="tab_item" data-ds-appid="578080" data-ds-itemkey="App_578080" data-ds-tagids="[1662,1774,3859,176981,1663,1775,3814]" data-ds-descids="[2,5]" data-ds-crtrids="[33973721]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_6"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="9800">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 98</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">生存</span>
+                <span class="top_tag">, 射击</span>
+                <span class="top_tag">, 多人</span>
+                <span class="top_tag">, 大逃杀</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1089350/NBA_2K20/?snr=1_4_4__104" class="tab_item" data-ds-appid="1089350" data-ds-itemkey="App_1089350" data-ds-tagids="[1746,701,599,3859,4182,4845,597]" data-ds-crtrids="[2428135,33338134]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_7"></div>
+          <div class="discount_block tab_item_discount" data-price-final="1600">
+            <div class="discount_pct">-92%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 199</div>
+              <div class="discount_final_price">¥ 16</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">NBA 2K20</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">篮球</span>
+                <span class="top_tag">, 体育</span>
+                <span class="top_tag">, 模拟</span>
+                <span class="top_tag">, 多人</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1299591/Total_War_THREE_KINGDOMS__The_Furious_Wild/?snr=1_4_4__104" class="tab_item" data-ds-appid="1299591" data-ds-itemkey="App_1299591" data-ds-tagids="[9,19,4667]" data-ds-descids="[2,5]" data-ds-crtrids="[32991376]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_8"></div>
+          <div class="discount_block tab_item_discount" data-price-final="7600">
+            <div class="discount_pct">-10%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 84</div>
+              <div class="discount_final_price">¥ 76</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Total War: THREE KINGDOMS - The Furious Wild</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <span class="platform_img linux"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">策略</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 暴力</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/?snr=1_4_4__104" class="tab_item" data-ds-appid="1222680" data-ds-itemkey="App_1222680" data-ds-tagids="[699,19,21,1644,3859,4102,4166]" data-ds-crtrids="[36140392,36135791]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_9"></div>
+          <div class="discount_block tab_item_discount" data-price-final="13500">
+            <div class="discount_pct">-60%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 338</div>
+              <div class="discount_final_price">¥ 135</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">《Need for Speed™ Heat</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">竞速</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 驾驶</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <div class="tab_see_more">查看更多：
+          <a href="https://store.steampowered.com/search/?filter=topsellers&amp;os=win&amp;snr=1_4_4__tabsmore" class="btnv6_white_transparent btn_small_tall">
+            <span>热销商品</span></a>或
+          <a href="https://store.steampowered.com/search/?filter=globaltopsellers&amp;os=win&amp;snr=1_4_4__tabsmore" class="btnv6_white_transparent btn_small_tall">
+            <span>全球热销商品</span></a>
+        </div>
+      </div>
+      <div class="tab_content" id="tab_upcoming_content" style="display: none;">
+        <a href="https://store.steampowered.com/app/1120560/Sense___A_Cyberpunk_Ghost_Story/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1120560" data-ds-itemkey="App_1120560" data-ds-tagids="[1667,3978,4085,3834,7208,4115,122]" data-ds-descids="[1,2,5]" data-ds-crtrids="[12668505]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_30"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Sense - 不祥的预感: A Cyberpunk Ghost Story</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <span class="platform_img linux"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">恐怖</span>
+                <span class="top_tag">, 生存恐怖</span>
+                <span class="top_tag">, 动漫</span>
+                <span class="top_tag">, 探索</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/909320/Ruinarch/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="909320" data-ds-itemkey="App_909320" data-ds-tagids="[493,220585,11333,7332,5300,599,4754]" data-ds-crtrids="[35884729]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_31"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Ruinarch</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">抢先体验</span>
+                <span class="top_tag">, 殖民模拟</span>
+                <span class="top_tag">, 恶人主角</span>
+                <span class="top_tag">, 基地建设</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1233800/Kandagawa_Jet_Girls/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1233800" data-ds-itemkey="App_1233800" data-ds-tagids="[699,4085,4747,19,1742]" data-ds-crtrids="[33144221,6866867]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_32"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Kandagawa Jet Girls</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">竞速</span>
+                <span class="top_tag">, 动漫</span>
+                <span class="top_tag">, 角色定制</span>
+                <span class="top_tag">, 动作</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1275760/Street_Power_Football/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1275760" data-ds-itemkey="App_1275760" data-ds-tagids="[701,1679,1773,3859,7226]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_33"></div>
+          <div class="discount_block tab_item_discount" data-price-final="14200">
+            <div class="discount_pct">-10%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 158</div>
+              <div class="discount_final_price">¥ 142</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Street Power Football</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">体育</span>
+                <span class="top_tag">, 足球</span>
+                <span class="top_tag">, 街机</span>
+                <span class="top_tag">, 多人</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/870780/____Control_Ultimate_Edition/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="870780" data-ds-itemkey="App_870780" data-ds-tagids="[21,19,7208,10808,3942,4166,1697]" data-ds-descids="[2,5]" data-ds-crtrids="[34087437,33027220]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_34"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">控制 - 终极合辑 / Control Ultimate Edition</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">冒险</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 女性主角</span>
+                <span class="top_tag">, 灵异</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/942220/Ambulance_Simulator/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="942220" data-ds-itemkey="App_942220" data-ds-tagids="[599,19,492,1100688,4175,597,4182]" data-ds-descids="[5]" data-ds-crtrids="[33701576]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_35"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Ambulance Simulator</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">模拟</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 独立</span>
+                <span class="top_tag">, 医疗模拟</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/936500/Transport_INC/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="936500" data-ds-itemkey="App_936500" data-ds-tagids="[10383,4094,4182,16689,12472,8945,4695]" data-ds-crtrids="[33067827]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_36"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Transport INC</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">交通运输</span>
+                <span class="top_tag">, 极简主义</span>
+                <span class="top_tag">, 单人</span>
+                <span class="top_tag">, 时间管理</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1180660/Tell_Me_Why/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1180660" data-ds-itemkey="App_1180660" data-ds-tagids="[21,3834,4106,5900,4486,5411,4145]" data-ds-descids="[5]" data-ds-crtrids="[3090835]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_37"></div>
+          <div class="discount_block tab_item_discount no_discount" data-price-final="9000">
+            <div class="discount_prices">
+              <div class="discount_final_price">¥ 90</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Tell Me Why</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">冒险</span>
+                <span class="top_tag">, 探索</span>
+                <span class="top_tag">, 动作冒险</span>
+                <span class="top_tag">, 步行模拟</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1042960/We_Are_The_Caretakers/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1042960" data-ds-itemkey="App_1042960" data-ds-tagids="[17305,4364,122,1676,4325,1670,9]" data-ds-descids="[5]" data-ds-crtrids="[33020424]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_38"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">We Are The Caretakers</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">策略角色扮演</span>
+                <span class="top_tag">, 大战略</span>
+                <span class="top_tag">, 角色扮演</span>
+                <span class="top_tag">, 即时战略</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1066390/Chernobyl_1986/?snr=1_4_4__tab-Upcoming" class="tab_item" data-ds-appid="1066390" data-ds-itemkey="App_1066390" data-ds-tagids="[492,599,9,1662,4166,4182,4342]" data-ds-crtrids="[33025535]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_39"></div>
+          <div class="discount_block empty tab_item_discount"></div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Chernobyl 1986</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">独立</span>
+                <span class="top_tag">, 模拟</span>
+                <span class="top_tag">, 策略</span>
+                <span class="top_tag">, 生存</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <div class="tab_see_more">查看更多：
+          <a href="https://store.steampowered.com/explore/upcoming/?snr=1_4_4__tabsmore" class="btnv6_white_transparent btn_small_tall">
+            <span>即将推出</span></a>
+        </div>
+      </div>
+      <div class="tab_content" id="tab_specials_content" style="display: none;">
+        <a href="https://store.steampowered.com/sub/124923/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-packageid="124923" data-ds-appid="292030,378649,378648" data-ds-itemkey="Sub_124923" data-ds-tagids="[122,1695,1742,4166,1684,5611,21]" data-ds-descids="[1,5]" data-ds-crtrids="[32989758]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_60"></div>
+          <div class="discount_block tab_item_discount" data-price-final="4700">
+            <div class="discount_pct">-70%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 158</div>
+              <div class="discount_final_price">¥ 47</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">The Witcher 3: Wild Hunt - Game of the Year Edition</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">角色扮演</span>
+                <span class="top_tag">, 开放世界</span>
+                <span class="top_tag">, 剧情丰富</span>
+                <span class="top_tag">, 氛围</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1089350/NBA_2K20/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="1089350" data-ds-itemkey="App_1089350" data-ds-tagids="[1746,701,599,3859,4182,4845,597]" data-ds-crtrids="[2428135,33338134]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_61"></div>
+          <div class="discount_block tab_item_discount" data-price-final="1600">
+            <div class="discount_pct">-92%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 199</div>
+              <div class="discount_final_price">¥ 16</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">NBA 2K20</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">篮球</span>
+                <span class="top_tag">, 体育</span>
+                <span class="top_tag">, 模拟</span>
+                <span class="top_tag">, 多人</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="292030" data-ds-itemkey="App_292030" data-ds-tagids="[1695,122,1742,4166,5611,1684,21]" data-ds-descids="[1,5]" data-ds-crtrids="[32989758]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_62"></div>
+          <div class="discount_block tab_item_discount" data-price-final="3800">
+            <div class="discount_pct">-70%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 127</div>
+              <div class="discount_final_price">¥ 38</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">The Witcher® 3: Wild Hunt</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">开放世界</span>
+                <span class="top_tag">, 角色扮演</span>
+                <span class="top_tag">, 剧情丰富</span>
+                <span class="top_tag">, 氛围</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="1222680" data-ds-itemkey="App_1222680" data-ds-tagids="[699,19,21,1644,3859,4102,4166]" data-ds-crtrids="[36140392,36135791]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_63"></div>
+          <div class="discount_block tab_item_discount" data-price-final="13500">
+            <div class="discount_pct">-60%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 338</div>
+              <div class="discount_final_price">¥ 135</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">《Need for Speed™ Heat</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">竞速</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 冒险</span>
+                <span class="top_tag">, 驾驶</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1217060/_/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="1217060" data-ds-itemkey="App_1217060" data-ds-tagids="[1663,1685,3959,492,3859,3843,1716]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_64"></div>
+          <div class="discount_block tab_item_discount" data-price-final="3800">
+            <div class="discount_pct">-10%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 42</div>
+              <div class="discount_final_price">¥ 38</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">枪火重生</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">第一人称射击</span>
+                <span class="top_tag">, 合作</span>
+                <span class="top_tag">, 轻度 Rogue</span>
+                <span class="top_tag">, 独立</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/1262240/_/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="1262240" data-ds-itemkey="App_1262240" data-ds-tagids="[3814,620519,597,6730,1645,1774,1659]" data-ds-crtrids="[37140667,36135791,36140475]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_65"></div>
+          <div class="discount_block tab_item_discount" data-price-final="8000">
+            <div class="discount_pct">-70%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 268</div>
+              <div class="discount_final_price">¥ 80</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">植物大战僵尸™: 和睦小镇保卫战</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">第三人称射击</span>
+                <span class="top_tag">, 英雄射击</span>
+                <span class="top_tag">, 休闲</span>
+                <span class="top_tag">, PvE</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="20920" data-ds-itemkey="App_20920" data-ds-tagids="[122,1684,5611,1742,6426,4182,1697]" data-ds-crtrids="[32989758]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_66"></div>
+          <div class="discount_block tab_item_discount" data-price-final="1000">
+            <div class="discount_pct">-85%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 68</div>
+              <div class="discount_final_price">¥ 10</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">The Witcher 2: Assassins of Kings Enhanced Edition</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <span class="platform_img linux"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">角色扮演</span>
+                <span class="top_tag">, 奇幻</span>
+                <span class="top_tag">, 成人</span>
+                <span class="top_tag">, 剧情丰富</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/239140/Dying_Light/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="239140" data-ds-itemkey="App_239140" data-ds-tagids="[1659,1667,3978,3843,4036,1775,3839]" data-ds-crtrids="[33025758,35023672]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_67"></div>
+          <div class="discount_block tab_item_discount" data-price-final="4300">
+            <div class="discount_pct">-66%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 127</div>
+              <div class="discount_final_price">¥ 43</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Dying Light</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <span class="platform_img mac"></span>
+              <span class="platform_img linux"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">僵尸</span>
+                <span class="top_tag">, 恐怖</span>
+                <span class="top_tag">, 生存恐怖</span>
+                <span class="top_tag">, 在线合作</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/323190/Frostpunk/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="323190" data-ds-itemkey="App_323190" data-ds-tagids="[1662,4328,9,1777,8945,3835,220585]" data-ds-crtrids="[32989971]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_68"></div>
+          <div class="discount_block tab_item_discount" data-price-final="3900">
+            <div class="discount_pct">-61%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 99</div>
+              <div class="discount_final_price">¥ 39</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Frostpunk</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">生存</span>
+                <span class="top_tag">, 城市营造</span>
+                <span class="top_tag">, 策略</span>
+                <span class="top_tag">, 蒸汽朋克</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <a href="https://store.steampowered.com/app/617290/Remnant_From_the_Ashes/?snr=1_4_4__tab-Specials" class="tab_item" data-ds-appid="617290" data-ds-itemkey="App_617290" data-ds-tagids="[29482,19,122,21,1685,3814,3859]" data-ds-descids="[2,5]" data-ds-crtrids="[32981301]">
+          <div class="tab_item_cap">
+            <img class="tab_item_cap_img" src="https://store.st.dl.pinyuncloud.com/public/shared/images/trans.gif" id="delayedimage_home_tabs_69"></div>
+          <div class="discount_block tab_item_discount" data-price-final="8400">
+            <div class="discount_pct">-40%</div>
+            <div class="discount_prices">
+              <div class="discount_original_price">¥ 140</div>
+              <div class="discount_final_price">¥ 84</div></div>
+          </div>
+          <div class="tab_item_content">
+            <div class="tab_item_name">Remnant: From the Ashes</div>
+            <div class="tab_item_details">
+              <span class="platform_img win"></span>
+              <div class="tab_item_top_tags">
+                <span class="top_tag">类魂系列</span>
+                <span class="top_tag">, 动作</span>
+                <span class="top_tag">, 角色扮演</span>
+                <span class="top_tag">, 冒险</span></div>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </a>
+        <div class="tab_see_more">查看更多：
+          <a href="https://store.steampowered.com/specials?snr=1_4_4__tabsmore#tab=TopSellers" class="btnv6_white_transparent btn_small_tall">
+            <span>优惠</span></a>
+        </div>
+      </div>
+    </div>
+    <div data-usability-scroll="80"></div>
+  </div>
+  <div class="home_rightcol">
+    <div id="tab_preview_container">
+      <div class="tab_preview">
+        <h2>Heart Girl:Starlight</h2>
+        <div class="tab_review_summary" data-tooltip-html="28 篇用户的游戏评测中有 85% 为好评。">
+          <div class="title">总体用户评测：</div>
+          <span class="game_review_summary positive">好评</span>
+          <span>&nbsp;(28)</span></div>
+        <div class="tags">
+          <a href="https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/?snr=1_4_4__tab-preview">休闲</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E8%A7%A3%E8%B0%9C/?snr=1_4_4__tab-preview">解谜</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/?snr=1_4_4__tab-preview">裸露</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/?snr=1_4_4__tab-preview">色情内容</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/?snr=1_4_4__tab-preview">欢乐</a></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_06a90bae702daa83472f30984c1cb5d48b651a43.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_06a90bae702daa83472f30984c1cb5d48b651a43.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_64e2c6cdf2437561cf236fb2bc6ed18079c54925.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_64e2c6cdf2437561cf236fb2bc6ed18079c54925.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_a5d432b01e13fb2fb372836961befdc171e80127.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_a5d432b01e13fb2fb372836961befdc171e80127.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_6492cf438fbd121e9428b6584041eef07a36b584.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_6492cf438fbd121e9428b6584041eef07a36b584.600x338.jpg&quot;);"></div>
+      </div>
+      <div class="tab_preview focus">
+        <h2>Train Sim World® 2</h2>
+        <div class="tab_review_summary" data-tooltip-html="457 篇用户的游戏评测中有 75% 为好评。">
+          <div class="title">总体用户评测：</div>
+          <span class="game_review_summary positive">多半好评</span>
+          <span>&nbsp;(457)</span></div>
+        <div class="tags">
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E7%81%AB%E8%BD%A6/?snr=1_4_4__tab-preview">火车</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/?snr=1_4_4__tab-preview">拟真</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E9%A9%BE%E9%A9%B6/?snr=1_4_4__tab-preview">驾驶</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_4_4__tab-preview">单人</a></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3a59d60ebf460d9f8dc1aa282415b07b675ea0a5.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3a59d60ebf460d9f8dc1aa282415b07b675ea0a5.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3e6f7ae741efc2e10dddb6ad1bff7785b7ceba92.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3e6f7ae741efc2e10dddb6ad1bff7785b7ceba92.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_86f35a75e2d415cea2cfa6aac4fbbfc27c26c688.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_86f35a75e2d415cea2cfa6aac4fbbfc27c26c688.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_c5359f2359eeaa976f43c519ecbe6b00dac29ec1.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_c5359f2359eeaa976f43c519ecbe6b00dac29ec1.600x338.jpg&quot;);"></div>
+      </div>
+      <div class="tab_preview">
+        <h2>浴血黑帮：傀儡师</h2>
+        <div class="tab_review_summary" data-tooltip-html="131 篇用户的游戏评测中有 74% 为好评。">
+          <div class="title">总体用户评测：</div>
+          <span class="game_review_summary positive">多半好评</span>
+          <span>&nbsp;(131)</span></div>
+        <div class="tags">
+          <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/?snr=1_4_4__tab-preview">策略</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/?snr=1_4_4__tab-preview">暴力</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_4_4__tab-preview">单人</a></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_20d91e84c625e0aa22f37090c640d8a10b10ec6f.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_20d91e84c625e0aa22f37090c640d8a10b10ec6f.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_8505100dd9735aee1b314941f6c72ac530107ff2.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_8505100dd9735aee1b314941f6c72ac530107ff2.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_5731ba9941e1fdfe4f6a7d71f1fe0c02a5322961.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_5731ba9941e1fdfe4f6a7d71f1fe0c02a5322961.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_ca3b066a6797859d8fcfde0f27982a9a1394ea04.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_ca3b066a6797859d8fcfde0f27982a9a1394ea04.600x338.jpg&quot;);"></div>
+      </div>
+      <div class="tab_preview">
+        <h2>Siege Survival: Gloria Victis Prologue</h2>
+        <div class="tab_review_summary" data-tooltip-html="175 篇用户的游戏评测中有 88% 为好评。">
+          <div class="title">总体用户评测：</div>
+          <span class="game_review_summary positive">特别好评</span>
+          <span>&nbsp;(175)</span></div>
+        <div class="tags">
+          <a href="https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/?snr=1_4_4__tab-preview">资源管理</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/?snr=1_4_4__tab-preview">策略</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%85%8D%E8%B4%B9/?snr=1_4_4__tab-preview">免费</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/?snr=1_4_4__tab-preview">时间管理</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_261607a2460bef047ae28fe4001d1ac76082368d.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_261607a2460bef047ae28fe4001d1ac76082368d.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_95ba179a6be22768d70087dcdfa25bdcd642bd4c.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_95ba179a6be22768d70087dcdfa25bdcd642bd4c.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_ea1d6fda565645d797f68850b3f924019785aaf3.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_ea1d6fda565645d797f68850b3f924019785aaf3.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_b74f9d5fd9755374908f03653dca0eb34d01063b.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_b74f9d5fd9755374908f03653dca0eb34d01063b.600x338.jpg&quot;);"></div>
+      </div>
+      <div class="tab_preview">
+        <h2>INMOST</h2>
+        <div class="tab_review_summary" data-tooltip-html="418 篇用户的游戏评测中有 93% 为好评。">
+          <div class="title">总体用户评测：</div>
+          <span class="game_review_summary positive">特别好评</span>
+          <span>&nbsp;(418)</span></div>
+        <div class="tags">
+          <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/?snr=1_4_4__tab-preview">像素图形</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E5%B9%B3%E5%8F%B0%E8%A7%A3%E8%B0%9C/?snr=1_4_4__tab-preview">平台解谜</a>
+          <a href="https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/?snr=1_4_4__tab-preview">氛围</a></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_e5f1edbeb1fde196904b62e3cbb8e3b09918bc78.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_e5f1edbeb1fde196904b62e3cbb8e3b09918bc78.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_83fffac8a34f526b8efb7c131f13f5e56801ff33.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_83fffac8a34f526b8efb7c131f13f5e56801ff33.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_d055b5b20898e004cd97dfd7e768f802d3b2bc9e.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_d055b5b20898e004cd97dfd7e768f802d3b2bc9e.600x338.jpg&quot;);"></div>
+        <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_f01585973dbb5d02d07a19e31f8b50c4a6c48e25.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_f01585973dbb5d02d07a19e31f8b50c4a6c48e25.600x338.jpg&quot;);"></div>
+      </div>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+</div>`
+    var str2 = `<div id="tab_preview_container">
+  <div class="tab_preview focus">
+    <h2>Heart Girl:Starlight</h2>
+    <div class="tab_review_summary" data-tooltip-html="28 篇用户的游戏评测中有 85% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">好评</span>
+      <span>&nbsp;(28)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/?snr=1_4_4__tab-preview">休闲</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%A7%A3%E8%B0%9C/?snr=1_4_4__tab-preview">解谜</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/?snr=1_4_4__tab-preview">裸露</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/?snr=1_4_4__tab-preview">色情内容</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/?snr=1_4_4__tab-preview">欢乐</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_06a90bae702daa83472f30984c1cb5d48b651a43.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_06a90bae702daa83472f30984c1cb5d48b651a43.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_64e2c6cdf2437561cf236fb2bc6ed18079c54925.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_64e2c6cdf2437561cf236fb2bc6ed18079c54925.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_a5d432b01e13fb2fb372836961befdc171e80127.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_a5d432b01e13fb2fb372836961befdc171e80127.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_6492cf438fbd121e9428b6584041eef07a36b584.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1384260/ss_6492cf438fbd121e9428b6584041eef07a36b584.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>Train Sim World® 2</h2>
+    <div class="tab_review_summary" data-tooltip-html="457 篇用户的游戏评测中有 75% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">多半好评</span>
+      <span>&nbsp;(457)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%81%AB%E8%BD%A6/?snr=1_4_4__tab-preview">火车</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/?snr=1_4_4__tab-preview">拟真</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E9%A9%BE%E9%A9%B6/?snr=1_4_4__tab-preview">驾驶</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_4_4__tab-preview">单人</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3a59d60ebf460d9f8dc1aa282415b07b675ea0a5.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3a59d60ebf460d9f8dc1aa282415b07b675ea0a5.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3e6f7ae741efc2e10dddb6ad1bff7785b7ceba92.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_3e6f7ae741efc2e10dddb6ad1bff7785b7ceba92.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_86f35a75e2d415cea2cfa6aac4fbbfc27c26c688.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_86f35a75e2d415cea2cfa6aac4fbbfc27c26c688.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_c5359f2359eeaa976f43c519ecbe6b00dac29ec1.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1282590/ss_c5359f2359eeaa976f43c519ecbe6b00dac29ec1.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>浴血黑帮：傀儡师</h2>
+    <div class="tab_review_summary" data-tooltip-html="131 篇用户的游戏评测中有 74% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">多半好评</span>
+      <span>&nbsp;(131)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/?snr=1_4_4__tab-preview">策略</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/?snr=1_4_4__tab-preview">暴力</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_4_4__tab-preview">单人</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_20d91e84c625e0aa22f37090c640d8a10b10ec6f.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_20d91e84c625e0aa22f37090c640d8a10b10ec6f.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_8505100dd9735aee1b314941f6c72ac530107ff2.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_8505100dd9735aee1b314941f6c72ac530107ff2.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_5731ba9941e1fdfe4f6a7d71f1fe0c02a5322961.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_5731ba9941e1fdfe4f6a7d71f1fe0c02a5322961.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_ca3b066a6797859d8fcfde0f27982a9a1394ea04.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1013310/ss_ca3b066a6797859d8fcfde0f27982a9a1394ea04.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>Siege Survival: Gloria Victis Prologue</h2>
+    <div class="tab_review_summary" data-tooltip-html="175 篇用户的游戏评测中有 88% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">特别好评</span>
+      <span>&nbsp;(175)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/?snr=1_4_4__tab-preview">资源管理</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/?snr=1_4_4__tab-preview">策略</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%85%8D%E8%B4%B9/?snr=1_4_4__tab-preview">免费</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/?snr=1_4_4__tab-preview">时间管理</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_261607a2460bef047ae28fe4001d1ac76082368d.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_261607a2460bef047ae28fe4001d1ac76082368d.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_95ba179a6be22768d70087dcdfa25bdcd642bd4c.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_95ba179a6be22768d70087dcdfa25bdcd642bd4c.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_ea1d6fda565645d797f68850b3f924019785aaf3.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_ea1d6fda565645d797f68850b3f924019785aaf3.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_b74f9d5fd9755374908f03653dca0eb34d01063b.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1362420/ss_b74f9d5fd9755374908f03653dca0eb34d01063b.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>INMOST</h2>
+    <div class="tab_review_summary" data-tooltip-html="418 篇用户的游戏评测中有 93% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">特别好评</span>
+      <span>&nbsp;(418)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/?snr=1_4_4__tab-preview">像素图形</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%B9%B3%E5%8F%B0%E8%A7%A3%E8%B0%9C/?snr=1_4_4__tab-preview">平台解谜</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/?snr=1_4_4__tab-preview">氛围</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_e5f1edbeb1fde196904b62e3cbb8e3b09918bc78.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_e5f1edbeb1fde196904b62e3cbb8e3b09918bc78.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_83fffac8a34f526b8efb7c131f13f5e56801ff33.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_83fffac8a34f526b8efb7c131f13f5e56801ff33.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_d055b5b20898e004cd97dfd7e768f802d3b2bc9e.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_d055b5b20898e004cd97dfd7e768f802d3b2bc9e.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_f01585973dbb5d02d07a19e31f8b50c4a6c48e25.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/938560/ss_f01585973dbb5d02d07a19e31f8b50c4a6c48e25.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>少女退魔记</h2>
+    <div class="tab_review_summary" data-tooltip-html="24 篇用户的游戏评测中有 75% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">多半好评</span>
+      <span>&nbsp;(24)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/?snr=1_4_4__tab-preview">角色扮演</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/?snr=1_4_4__tab-preview">日系角色扮演</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/?snr=1_4_4__tab-preview">动漫</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_4_4__tab-preview">单人</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_d1d11606a684a81a215c41d0877f09354a845810.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_d1d11606a684a81a215c41d0877f09354a845810.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_2531ff2c9cd523ccc7a00e1bc35b1866173946fc.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_2531ff2c9cd523ccc7a00e1bc35b1866173946fc.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_1c39940ac7f14417459d876c443ab898d1b3a617.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_1c39940ac7f14417459d876c443ab898d1b3a617.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_ff266e0837b63ed779d2588c5cc31ad87a512d3d.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1328910/ss_ff266e0837b63ed779d2588c5cc31ad87a512d3d.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>PGA TOUR 2K21</h2>
+    <div class="tab_review_summary" data-tooltip-html="364 篇用户的游戏评测中有 80% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">特别好评</span>
+      <span>&nbsp;(364)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E4%BD%93%E8%82%B2/?snr=1_4_4__tab-preview">体育</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E9%AB%98%E5%B0%94%E5%A4%AB%E7%90%83/?snr=1_4_4__tab-preview">高尔夫球</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%9C%AC%E5%9C%B0%E5%A4%9A%E4%BA%BA/?snr=1_4_4__tab-preview">本地多人</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/?snr=1_4_4__tab-preview">回合制</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_c01e7126feb3d3ac045c2e15a6a1de8b4702268c.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_c01e7126feb3d3ac045c2e15a6a1de8b4702268c.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_63d425bd0aa9d677bc7488597a7d5c5f9cbbf4ea.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_63d425bd0aa9d677bc7488597a7d5c5f9cbbf4ea.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_3fff662413d6edd29b927a73344e383b7bbbf4c1.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_3fff662413d6edd29b927a73344e383b7bbbf4c1.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_40874ea6e833755da922d81c67e976733ba0ea98.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1016120/ss_40874ea6e833755da922d81c67e976733ba0ea98.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>Remnant: From the Ashes - Subject 2923</h2>
+    <div class="tab_review_summary" data-tooltip-html="304 篇用户的游戏评测中有 76% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">多半好评</span>
+      <span>&nbsp;(304)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/?snr=1_4_4__tab-preview">角色扮演</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/?snr=1_4_4__tab-preview">动作</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/?snr=1_4_4__tab-preview">暴力</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/?snr=1_4_4__tab-preview">类魂系列</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_fb8d57fb15ef8cfab3c7916e071b9aa5e6f6077b.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_fb8d57fb15ef8cfab3c7916e071b9aa5e6f6077b.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_c7c77afc4f49e4127d742aaae06f67939c1eea82.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_c7c77afc4f49e4127d742aaae06f67939c1eea82.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_13561ee7171d1f8deab875cf1d2f49fafb19af16.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_13561ee7171d1f8deab875cf1d2f49fafb19af16.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_95e3daa2012ddbbba6cce603f661b4cbf3f22211.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1344680/ss_95e3daa2012ddbbba6cce603f661b4cbf3f22211.600x338.jpg&quot;);"></div>
+  </div>
+  <div class="tab_preview">
+    <h2>像素女友</h2>
+    <div class="tab_review_summary" data-tooltip-html="87 篇用户的游戏评测中有 98% 为好评。">
+      <div class="title">总体用户评测：</div>
+      <span class="game_review_summary positive">特别好评</span>
+      <span>&nbsp;(87)</span></div>
+    <div class="tags">
+      <a href="https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/?snr=1_4_4__tab-preview">独立</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/?snr=1_4_4__tab-preview">休闲</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/?snr=1_4_4__tab-preview">角色扮演</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/?snr=1_4_4__tab-preview">冒险</a>
+      <a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_4_4__tab-preview">模拟</a></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_af67a718e77aff37d4c3408a90350ef835ca3329.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_af67a718e77aff37d4c3408a90350ef835ca3329.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_e8e209cd85f1b64c81be1d66ff2594398e67ad40.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_e8e209cd85f1b64c81be1d66ff2594398e67ad40.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_8e0e196a6406fbbdb47a14ae79031682a8b02acb.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_8e0e196a6406fbbdb47a14ae79031682a8b02acb.600x338.jpg&quot;);"></div>
+    <div class="screenshot" data-background-image-url="https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_02a81a0deb7fe59afc44075b943034d284504e73.600x338.jpg" style="background-image: url(&quot;https://media.st.dl.pinyuncloud.com/steam/apps/1368860/ss_02a81a0deb7fe59afc44075b943034d284504e73.600x338.jpg&quot;);"></div>
+  </div>
+</div>`
+    var re =/img class="tab_item_cap_img" src=".*?"/igm
+    var newStr = str.match(re)
+    // console.log(newStr)
+    var str2 = `"img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1384260/capsule_184x69.jpg?t=1598272013\""
+​
+1: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1328910/capsule_184x69_schinese.jpg?t=1598068836\""
+​
+2: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/938560/capsule_184x69.jpg?t=1598003908\""
+​
+3: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1016120/capsule_184x69.jpg?t=1597982399\""
+​
+4: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1282590/capsule_184x69.jpg?t=1597945878\""
+​
+5: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1013310/capsule_184x69_schinese.jpg?t=1597938582\""
+​
+6: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1344680/capsule_184x69.jpg?t=1597957986\""
+​
+7: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1368860/capsule_184x69.jpg?t=1598292011\""
+​
+8: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/1362420/capsule_184x69.jpg?t=1598116353\""
+​
+9: "img class=\"tab_item_cap_img\" src=\"https://media.st.dl.pinyuncloud.com/steam/apps/972660/capsule_184x69_alt_assets_1.jpg?t=1598282921\""`
+
+    // img
+    var re1 = /https:.*?\.jpg/img
+    var newArr2 = str2.match(re1)
+    // console.log(newArr2)
+    // var newArr3 = newStr2.split("")
+
+    // 价格
+    var re2 = /<div class="discount_final_price">.*?<\/div>\<\/div>/img
+    var newArr3 = str.match(re2)
+    // console.log(newArr3)
+    var price = [6,44,50,199,90,64,48,"免费","免费开玩",98]
+    // 48,47,38,188,98,16]
+
+    // 标签
+    var re3 = /<span class="top_tag">.*?<\/span>/img
+    var newArr4 = str.match(re3)
+    // console.log(newArr4)
+
+
+
+    // img1 2 3 
+    var re4 = /&quot;.*?&quot/igm
+    var img123 = str2.match(re4)
+    console.log(img123)
+
+    var arr = []
+    // var obj = {}
+    for(let i = 0 ; i < newArr2.length ; i++){
+      var obj = {}
+      index = i +1 ;
+      obj.id = index;
+      obj.img = newArr2[i]
+      arr.push(obj)
+    }
+    for(let i = 0 ; i < arr.length ; i++){
+      arr[i].prcie = `￥${price[i]}`
+      arr[i].tag = "1,2,3,4,5"
+      arr[i].icon = "&#xe68d;&nbsp;&#xe7b8;&nbsp;&#xe656;"
+      // for(var j ; j < 3 ; j++){
+      //   arr[i].img1 = 
+      // }
+    }
+    // console.log(arr)
+    // var arr = [
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {
+    //     id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {  id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    //   {  id:1,
+    //     img:"",
+    //     title:"",
+    //     icon:"",
+    //     tag:"",
+    //     img1:"",
+    //     describe1:"",
+    //     img2:"",
+    //     describe1:"",
+    //     img3:"",
+    //     describe1:"",
+    //   },
+    // ]
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
