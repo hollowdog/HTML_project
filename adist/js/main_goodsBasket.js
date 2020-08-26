@@ -1,13 +1,12 @@
-console.log("加载成功")
+console.log("main_goodsBasket.js")
 
-//  jquery 遵循AMD规范
-// 配置路径
+
 require.config({
   paths:{
     jquery:"jquery-1.11.3",
     "jquery-cookie": "jquery.cookie",
     parabola:"parabola",
-    goodsDetail:"goodsDetail",
+    goodsBasket:"goodsBasket",
   },
   // jquery-cookie 依赖于jquery
   shim:{
@@ -21,10 +20,9 @@ require.config({
   }
 })
 
-require(["goodsDetail"],function(goodsDetail,$){
-  goodsDetail.getCookie()
-  goodsDetail.setCookie()
-  // goodsDetail.imgBig()
-
+require(["goodsBasket"],function(goodsBasket){
+  goodsBasket.setCookie()
+  goodsBasket.sc_msg()
+  goodsBasket.del_add_reduce()
  
 })

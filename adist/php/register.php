@@ -1,7 +1,7 @@
 <?php
 header('content-type:text/html;charset="utf-8"');
 
-$reponseData = array("code"=>0,"msg"=>"");
+$reponseData = array("code"=>0,"msg"=>"注册成功，请前往登录页登录");
 
 // 将传过来的数据全部取出
 $email = $_POST["email"];
@@ -15,7 +15,7 @@ if(!$email){
   $reponseData["msg"] = "邮箱不能为空";
   echo json_encode($reponseData);
   exit;
-}else if(!preg_match(/^[a-zA-Z]\w+@\w+\.[a-zA-Z]+$/,$email)){
+}else if(!preg_match("/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)$/",$email)){
   $reponseData["code"] = 2;
   $reponseData["msg"] = "邮箱格式错误";
   echo json_encode($reponseData);
@@ -84,7 +84,7 @@ if($res){
   $reponseData["code"]=7;
   $reponseData["msg"]="注册失败";
   echo json_encode($reponseData);
-  exit;
+  exit; 
 }
 
 mysql_close();

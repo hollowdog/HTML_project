@@ -5,6 +5,7 @@ console.log("加载成功")
 require.config({
   paths:{
     jquery:"jquery-1.11.3",
+    "jquery-cookie": "jquery.cookie",
     parabola:"parabola",
     goodsDetail:"goodsDetail",
   },
@@ -20,9 +21,10 @@ require.config({
   }
 })
 
-require(["goodsDetail","jquery"],function(goodsDetail,$){
-  goodsDetail.show(),
-  goodsDetail.imgBig()
+require(["goodsDetail"],function(goodsDetail,$){
+  goodsDetail.getCookie()
+  goodsDetail.setCookie()
+  // goodsDetail.imgBig()
 
  
 })

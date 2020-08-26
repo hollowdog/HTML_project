@@ -5,6 +5,10 @@ const connect = require("gulp-connect")
 const minifycss = require("gulp-minify-css")
 const htmlmin = require("gulp-htmlmin")
 
+
+gulp.task("hello",function(){
+  console.log("hello")
+})
 // 复制html
 gulp.task("copy-html",function(){
   return gulp.src("html/*.html")
@@ -81,7 +85,7 @@ gulp.task("watch",function(){
 gulp.task("server",function(){
   connect.server({
     root:"adist",
-    port:8888,
+    port:8889,
     livereload:true,
   })
   console.log("超视距联营已部署")

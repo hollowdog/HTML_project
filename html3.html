@@ -1176,13 +1176,6 @@
     var newArr4 = str.match(re3)
     // console.log(newArr4)
 
-
-
-    // img1 2 3 
-    var re4 = /&quot;.*?&quot/igm
-    var img123 = str2.match(re4)
-    console.log(img123)
-
     var arr = []
     // var obj = {}
     for(let i = 0 ; i < newArr2.length ; i++){
@@ -1192,146 +1185,19 @@
       obj.img = newArr2[i]
       arr.push(obj)
     }
+
+    titleArr = ["少女退魔记","INMOST","PGA TOUR 2k12","TrainSim Workd","浴血黑帮：傀儡师","Remnant: From the Ashes - Subject 2923","像素女友","Siege Survival: Gloria Victis Prologue","Spiritfarer®","Fall Guys: Ultimate Knockout"]
     for(let i = 0 ; i < arr.length ; i++){
       arr[i].prcie = `￥${price[i]}`
       arr[i].tag = "1,2,3,4,5"
       arr[i].icon = "&#xe68d;&nbsp;&#xe7b8;&nbsp;&#xe656;"
+      arr[i].title = titleArr[i]
       // for(var j ; j < 3 ; j++){
       //   arr[i].img1 = 
       // }
     }
-    // console.log(arr)
-    // var arr = [
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {
-    //     id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {  id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    //   {  id:1,
-    //     img:"",
-    //     title:"",
-    //     icon:"",
-    //     tag:"",
-    //     img1:"",
-    //     describe1:"",
-    //     img2:"",
-    //     describe1:"",
-    //     img3:"",
-    //     describe1:"",
-    //   },
-    // ]
+    console.log(JSON.stringify(arr))
+    
     </script>
 </head>
 <body>

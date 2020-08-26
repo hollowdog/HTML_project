@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>欢迎来到Steam!</title>
+  <title>购物车</title>
   <link rel="stylesheet" href="./iconfont/iconfont.css">
   <link rel="stylesheet" href="./css/goodsBasket.css">
-  <script src="./js/require.js" defer async ="true" data-main="js/main"></script>
+  <script src="./js/require.js" defer async ="true" data-main="js/main_goodsBasket"></script>
 </head>
 <body>
+  <img src="../images/pay.png" alt="" id="pay_img" style="display: none;width: 30%;position: absolute;top:0;left: 35%;z-index: 20;">
   <!-- 左菜单 -->
   <div id="left_menu"></div>
   <!-- 中间主体 -->
@@ -130,126 +131,33 @@
         <h2>您的购物车</h2>
         <div id="theBasket">
           <ul>
-            <li>
+            <!-- <li>
               <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
               <h5>From the deep </h5>
               <div>
                 <span class="iconfont">&#xe68d;</span>
                 <span class="iconfont">&#xe7b8;</span>
                 <span class="iconfont">&#xe656;</span>
+              </div>
+              <div>
+                <span id="">-</span>
+                <span>1</span>
+                <span id="">+</span>
               </div>
               <div>
                 <span>￥87</span>
                 <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-            <li>
-              <img src="https://media.st.dl.pinyuncloud.com/steam/apps/1381910/capsule_sm_120.jpg?t=1597956667" alt="">
-              <h5>From the deep </h5>
-              <div>
-                <span class="iconfont">&#xe68d;</span>
-                <span class="iconfont">&#xe7b8;</span>
-                <span class="iconfont">&#xe656;</span>
-              </div>
-              <div>
-                <span>87</span>
-                <a href="">移除</a></div>
-            </li>
-
-            
-
+            </li> -->
           </ul>
         </div>
+        <a href="" id="clear_Basket">清空购物车</a>
         <div id="total">
           <span>预计总额:</span>
           <span>￥87</span>
         </div>
-        <a href="" id="pay">
+        <button href="" id="pay">
           立刻付款
-        </a>
+        </button>
       </div>
 
       <!-- footer -->

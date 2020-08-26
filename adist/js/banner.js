@@ -70,7 +70,7 @@ define(["jquery"], function ($) {
     var iNow = 0; //记录要显示的图片的下标
     var timer = null; //轮播效果的定时器
   
-    console.log(aBtns,oUl,left,right)
+    // console.log(aBtns,oUl,left,right)
     //给整个轮播图加一个移入移出
     console.log($("#banner2"))
     $("#banner2").mouseenter(function () {
@@ -132,7 +132,7 @@ define(["jquery"], function ($) {
     var iNow = 0; //记录要显示的图片的下标
     var timer = null; //轮播效果的定时器
   
-    console.log(aBtns,oUl,left,right)
+    // console.log(aBtns,oUl,left,right)
     //给整个轮播图加一个移入移出
     $("#banner3").mouseenter(function () {
         clearInterval(timer);

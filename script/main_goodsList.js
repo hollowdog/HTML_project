@@ -5,9 +5,7 @@ require.config({
   paths: {
     jquery: "jquery-1.11.3",
     "jquery-cookie": "jquery.cookie",
-    parabola: "parabola",
-    index: "index",
-    banner: "banner"
+    goodsList:"goodsList",
   },
   //jquery-cookie 依赖于jquery
   shim: {
@@ -20,17 +18,7 @@ require.config({
   },
 })
 
-require(["index","banner"],function(index,banner){
-  // 获取数据
-  // index.picHover()
-  index.download1()
-  index.download2()
-  index.download3()
-  index.game_list_hover()
-  index.game_list_button()
-  // 轮播图
-  banner.bannerMain()
-  banner.bannerMain2()
-  banner.bannerMain3()
-  // 购物车效果
+require(["goodsList"],function(goodsList){
+  goodsList.goodsList1(),
+  goodsList.setCookie()
 })
