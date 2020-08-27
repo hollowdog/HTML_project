@@ -152,7 +152,7 @@ body{
     position: absolute;
     right: 0;
     top: 0;
-    width: 50px;
+    // width: 50px;
     padding: 0 25px;
     background: yellowgreen;
     font-size: 12px;
@@ -298,13 +298,16 @@ body{
     height: 550px;
     position: absolute;
     top: 240px;
-    background: red;
+    background:#19435F !important;
+    overflow-x: hidden;
     #goodsli{
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin: 2px;
       border: 1px solid transparent;
+      color: white;
+      background: #1B2838;
       &:hover{
         border: 1px solid white;
       }
@@ -317,7 +320,7 @@ body{
         font-size: 12px;
         text-align: left;
         line-height: 20px;
-        background: yellow;
+        background: #1B2838;
         margin-left: 5px;
       }
       div:nth-child(3){
@@ -330,7 +333,7 @@ body{
       div:nth-child(4){
         width: 45px;
         height: 25px;
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
         line-height: 25px;
         padding: 10px;
@@ -339,12 +342,13 @@ body{
       div:nth-child(5){
         width: 45px;
         height: 25px;
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
         line-height: 25px;
         padding: 10px;
         margin: 0 10px;
-        background: pink;
+        overflow: hidden;
+        // background: pink;
       }
     }
   }

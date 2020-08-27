@@ -5,6 +5,10 @@ const connect = require("gulp-connect")
 const minifycss = require("gulp-minify-css")
 const htmlmin = require("gulp-htmlmin")
 
+
+gulp.task("hello",function(){
+  console.log("hello")
+})
 // 复制html
 gulp.task("copy-html",function(){
   return gulp.src("html/*.html")
