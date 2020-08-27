@@ -85,7 +85,7 @@ gulp.task("watch",function(){
 gulp.task("server",function(){
   connect.server({
     root:"adist",
-    port:8888,
+    port:8889,
     livereload:true,
   })
   console.log("超视距联营已部署")

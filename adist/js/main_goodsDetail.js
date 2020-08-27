@@ -22,11 +22,18 @@ require.config({
   }
 })
 
+<<<<<<< HEAD
 require(["goodsDetail","theBasket"],function(goodsDetail,theBasket){
   goodsDetail.getCookie()
   goodsDetail.setCookie()
   // goodsDetail.imgBig()
   theBasket.theBasket()
+=======
+require(["goodsDetail"],function(goodsDetail,$){
+  goodsDetail.getCookie()
+  goodsDetail.setCookie()
+  // goodsDetail.imgBig()
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
 
  
 })

@@ -6,7 +6,10 @@ require.config({
     jquery: "jquery-1.11.3",
     "jquery-cookie": "jquery.cookie",
     goodsList:"goodsList",
+<<<<<<< HEAD
     theBasket:"theBasket"
+=======
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
   },
   //jquery-cookie 依赖于jquery
   shim: {
@@ -19,8 +22,14 @@ require.config({
   },
 })
 
+<<<<<<< HEAD
 require(["goodsList","theBasket"],function(goodsList,theBasket){
   goodsList.goodsList1()
   goodsList.setCookie()
   theBasket.theBasket()
+=======
+require(["goodsList"],function(goodsList){
+  goodsList.goodsList1(),
+  goodsList.setCookie()
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
 })

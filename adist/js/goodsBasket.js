@@ -1,6 +1,10 @@
 console.log("goodsBasket.js")
 
+<<<<<<< HEAD
 define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
+=======
+define(["jquery","jquery-cookie"],function($){
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
 
   // 添加cookie保存购物车信息
   function setCookie(){
@@ -47,6 +51,7 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
   function del_add_reduce(){
     console.log("del")
     var cookieArr = JSON.parse($.cookie("goods"))
+<<<<<<< HEAD
     console.log(cookieArr)
     var oNum = $(".content #Basket #theBasket ul li div:nth-child(4) span:nth-child(2)").html()
 
@@ -101,11 +106,29 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
       }
     })
     // 清空购物车
+=======
+    // var oNum = $(".content #Basket #theBasket ul li div:nth-child(4) span:nth-child(2)").html()
+    $(".content #Basket #theBasket ul").on("click","li div:nth-child(4) span:nth-child(1)",function(e){
+      var target = e.target || e.srcElement;
+      console.log("-")
+      console.log(target.id)
+      for(var i = 0 ; i < cookieArr.length ;i++){
+        if(cookieArr){}
+      }
+    })
+    $(".content #Basket #theBasket ul").on("click","li div:nth-child(4) span:nth-child(3)",function(e){
+      
+      
+    })
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
     $(".content #Basket #clear_Basket").on("click",function(){
       $.cookie("goods",null)
       sc_msg()
     })
+<<<<<<< HEAD
     // 付款
+=======
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
     $(".content #Basket #pay").on("click",function(){
       $("#pay_img").css("display","block")
     })
@@ -134,7 +157,11 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
             }
           }
         }
+<<<<<<< HEAD
         // console.log(newArr)
+=======
+        console.log(newArr)
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
         let str = ``;
         // 总价格
         var total_price = 0;
@@ -154,11 +181,19 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
           </div>
           <div>
             <span>${newArr[i].price}</span>
+<<<<<<< HEAD
             <a href="" id="${newArr[i].id}">移除</a></div>
+=======
+            <a href="">移除</a></div>
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
         </li>`
 
           var price = newArr[i].price.split("￥")[1]
           var num = newArr[i].num
+<<<<<<< HEAD
+=======
+          console.log(num)
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
           // console.log(price)
           if(price){
             total_price += num * price;
@@ -171,6 +206,7 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
     })
   }
 
+<<<<<<< HEAD
   // function total_price(){
   //   var cookieArr = JSON.parse($.cookie("goods"))
   //   var total_price = 0;
@@ -185,6 +221,8 @@ define(["theBasket","jquery","jquery-cookie"],function(theBasket,$){
   //   console.length(total_price)
   //   $(".content #Basket #total span:nth-child(2)").html("￥" + total_price)
   // }
+=======
+>>>>>>> cea5301daaaaa47a9098579441c1c279b3b9b0c1
 
 
 
